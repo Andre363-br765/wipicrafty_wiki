@@ -58,13 +58,19 @@ header {
   border-bottom: 2px solid #333;
 }
 
-.logo img {
-  background-color: #fff;
-  padding: 5px 10px;
-  max-width: 180px;
-  border-radius: 10px;
+.logo {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
   display: inline-block;
 }
+
+.logo img {
+  max-width: 180px;
+  display: block;
+}
+
 
 .menu ul {
   display: flex;
