@@ -18,6 +18,7 @@ ol {
    VARIÁVEIS CSS
 ================================ */
 :root {
+  /* CORES */
   --bg-principal: #0c0c0c;
   --bg-caixa: #1a1a1a;
   --bg-hover: #333;
@@ -29,7 +30,7 @@ ol {
   --cor-link: #e74c3c;
   --cor-link-hover: #ff5e57;
 
-  /* tons dos títulos */
+  /* NOVOS TONS PARA TÍTULOS */
   --titulo-h1: #4ea3ff;
   --titulo-h2: #78b8ff;
   --titulo-h3: #9ccaff;
@@ -131,7 +132,7 @@ main {
 }
 
 .sidebar h2 {
-  color: var(--titulo-h2);
+  color: var(--cor-titulo);
   margin-bottom: 15px;
   font-size: 1.2rem;
 }
@@ -165,24 +166,29 @@ main {
 .main h2 {
   color: var(--titulo-h2);
   margin-top: 25px;
+  color: var(--);
   font-weight: 600;
 }
 
 .main h3 {
-  color: var(--titulo-h3);
   margin-top: 18px;
   font-size: 1.2rem;
+  color: var(--titulo-h3);
   font-weight: 500;
 }
 
 .main h4 {
-  color: var(--titulo-h4);
   margin-top: 10px;
   font-size: 1rem;
+  color: var(--titulo-h4);
 }
 
 .main h5 {
   color: var(--titulo-h5);
+}
+
+.main h6 {
+  color: var(--titulo-h6);
 }
 
 .main p {
