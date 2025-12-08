@@ -1,17 +1,61 @@
-# Módulo 3 - Trilha HTML
+Perfeito! Já que o desafio foi concluído, o README agora pode **refletir o projeto finalizado**, mostrar o que foi feito, e servir como documentação do seu trabalho. Aqui vai uma sugestão de README reformulado:
 
-**Título:** Recriando Wikipedia, com um layout melhor :)
+---
 
-## Objetivo
-Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+# Wipicrafty Wiki
 
-## Desafio
-Neste repositório tem uma estrutura básica já pré-montada de um layout simples com um pouco de CSS aplicado. Apenas para deixar mais apresentável.
+**Descrição:**
+Projeto de site inspirado na Wikipedia, com layout melhorado, sidebar com navegação, tabelas estilizadas, imagens e conteúdo organizado, aplicando semântica e acessibilidade.
 
-Fiquem a vontade para criar da forma que desejarem, e sobre os temas que quiserem. O intuito aqui é divertir, e ao mesmo tempo aprender com o desafio.
+## Objetivo do projeto
 
-Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais fácil de entenderem como proceder.
+Este projeto foi desenvolvido para consolidar conhecimentos em:
 
-## Links úteis
-- [Download do NVDA](https://www.nvaccess.org/download/)
-- [Wikipedia](https://pt.wikipedia.org/)
+* Estrutura de HTML semântico;
+* Estilização com CSS moderno;
+* Layout responsivo;
+* Acessibilidade básica e boas práticas de navegação;
+* Criação de listas, tabelas e figuras estilizadas.
+
+## Funcionalidades
+
+* Sidebar fixa com links de navegação internos;
+* Artigos com títulos, subtítulos, listas e imagens;
+* Tabelas estilizadas com cores alternadas e hover;
+* Layout responsivo para diferentes tamanhos de tela;
+* Links com hover e efeitos visuais suaves;
+* Uso de variáveis CSS para cores, espaçamentos e bordas.
+
+## Tecnologias utilizadas
+
+* HTML5 semântico;
+* CSS3 (incluindo variáveis CSS e flexbox);
+* Hospedagem no GitHub Pages.
+
+## Visualização do projeto
+
+O projeto está disponível online:
+[Wipicrafty Wiki](https://andre363-br765.github.io/wipicrafty_wiki/)
+
+## Estrutura do repositório
+
+```text
+/src
+  /css
+    style.css
+  /assets
+    /images
+index.html
+README.md
+```
+
+## Observações
+
+* Todo o conteúdo é fictício e criado com fins educacionais;
+* Este projeto consolida aprendizado sobre semântica, acessibilidade e organização de layout.
+
+---
+
+Se você quiser, posso **criar uma versão ainda mais “clean e profissional”** do README, estilo que vemos em projetos do GitHub com badges, links, resumo rápido e visual agradável, deixando ele mais apresentável para mostrar a qualquer pessoa que visite o repositório.
+
+Quer que eu faça isso?
