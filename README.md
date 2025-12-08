@@ -1,7 +1,3 @@
-Perfeito! Já que o desafio foi concluído, o README agora pode **refletir o projeto finalizado**, mostrar o que foi feito, e servir como documentação do seu trabalho. Aqui vai uma sugestão de README reformulado:
-
----
-
 # Wipicrafty Wiki
 
 **Descrição:**
@@ -49,13 +45,13 @@ index.html
 README.md
 ```
 
+## Créditos / Imagens
+
+* A logo do projeto foi criada com auxílio da **IA ChatGPT**;
+* As imagens utilizadas foram obtidas do **Google** ou da **Wikipedia**;
+* Todo o conteúdo é fictício e criado com fins educacionais.
+
 ## Observações
 
-* Todo o conteúdo é fictício e criado com fins educacionais;
-* Este projeto consolida aprendizado sobre semântica, acessibilidade e organização de layout.
-
----
-
-Se você quiser, posso **criar uma versão ainda mais “clean e profissional”** do README, estilo que vemos em projetos do GitHub com badges, links, resumo rápido e visual agradável, deixando ele mais apresentável para mostrar a qualquer pessoa que visite o repositório.
-
-Quer que eu faça isso?
+* Este projeto consolida aprendizado sobre semântica, acessibilidade e organização de layout;
+* Pode ser usado como referência ou inspiração para outros projetos educativos.
