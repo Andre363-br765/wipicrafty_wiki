@@ -7,30 +7,41 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* Backgrounds */
-  --bg-principal: #111;
-  --bg-caixa: #1a1a1a;
-  --bg-hover: #333;
+ul {
+  list-style: none; /* Remove os pontos */
+  padding: 0;       /* Remove o recuo padrão */
+  margin: 0;        /* Remove a margem padrão, se quiser */
+}
 
-  /* Textos */
+
+:root {
+  /* ================================
+     CORES
+  ================================= */
+  --bg-principal: #111; /* corpo da página */
+  --bg-caixa: #1a1a1a; /* caixas / cards */
+  --bg-hover: #333; /* hover em elementos */
+
   --texto-principal: #eee;
   --texto-secundario: #bbb;
   --texto-suave: #aaa;
 
-  /* Links e destaques */
   --cor-link: #4ea3ff;
   --cor-titulo: #4ea3ff;
-  --cor-link-hover: #ff5e57;
+  --cor-link-hover: #ff5e57; /* hover de links importantes */
 
-  /* Bordas e radius */
   --borda: #333;
   --radius: 10px;
 
-  /* Espaçamento */
+  /* ================================
+     ESPAÇAMENTO
+  ================================= */
   --padding: 15px;
 }
 
+/* ================================
+   GLOBAL
+================================ */
 html {
   scroll-behavior: smooth;
 }
@@ -38,14 +49,14 @@ html {
 html,
 body {
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background-color: #111;
-  color: #eee;
+  background-color: var(--bg-principal);
+  color: var(--texto-principal);
   line-height: 1.6;
 }
 
 /* LINKS */
 a {
-  color: #4ea3ff;
+  color: var(--cor-link);
   text-decoration: none;
 }
 
@@ -62,13 +73,13 @@ header {
   align-items: center;
   background-color: var(--bg-caixa);
   padding: 15px 25px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--borda);
 }
 
 .logo {
   background-color: rgba(255, 255, 255, 0.15);
   padding: 6px 12px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   backdrop-filter: blur(4px);
   display: inline-block;
 }
@@ -86,15 +97,12 @@ header {
 
 .menu a {
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 
 .menu a:hover {
-  background-color: #333;
-}
-
-.sidebar a:hover {
-  color: #ff5e57; /* vermelho ou laranja mais destacado */
+  background-color: var(--bg-hover);
+  color: var(--cor-link-hover);
 }
 
 /* ================================
@@ -104,6 +112,8 @@ main {
   display: flex;
   gap: 30px;
   padding: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ================================
@@ -111,11 +121,11 @@ main {
 ================================ */
 .sidebar {
   width: 220px;
-  background-color: #1a1a1a;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: var(--bg-caixa);
+  padding: var(--padding);
+  border-radius: var(--radius);
   height: fit-content;
-  border: 1px solid #333;
+  border: 1px solid var(--borda);
   position: sticky;
   top: 20px;
 }
@@ -123,11 +133,12 @@ main {
 .sidebar h2 {
   margin-bottom: 15px;
   font-size: 1.2rem;
-  color: #4ea3ff;
+  color: var(--cor-titulo);
 }
 
 .sidebar ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .sidebar li {
@@ -135,7 +146,7 @@ main {
 }
 
 .sidebar a:hover {
-  color: #fff;
+  color: var(--cor-link-hover);
 }
 
 /* ================================
@@ -143,39 +154,42 @@ main {
 ================================ */
 .main {
   flex: 1;
-  background-color: #1a1a1a;
+  background-color: var(--bg-caixa);
   padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #333;
+  border-radius: var(--radius);
+  border: 1px solid var(--borda);
 }
 
 .main h1 {
   font-size: 2rem;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .main h2 {
   margin-top: 25px;
-  color: #4ea3ff;
+  color: var(--cor-titulo);
+  font-weight: 600;
 }
 
 .main h3 {
   margin-top: 18px;
   font-size: 1.2rem;
   color: #ddd;
+  font-weight: 500;
 }
 
 .main h4 {
   margin-top: 10px;
   font-size: 1rem;
-  color: #aaa;
+  color: var(--texto-suave);
 }
 
 .main p {
   margin: 12px 0;
 }
 
-/* FOTO DO SAW */
+/* FIGURE / IMAGENS */
 figure {
   margin: 20px 0;
   text-align: center;
@@ -183,19 +197,18 @@ figure {
 
 figure img {
   max-width: 100%;
-  border-radius: 10px;
-  border: 2px solid #333;
+  height: auto;
+  border-radius: var(--radius);
+  border: 2px solid var(--borda);
 }
 
 figcaption {
   margin-top: 8px;
-  color: #bbb;
+  color: var(--texto-secundario);
   font-size: 0.9rem;
 }
 
-/* ================================
-   LISTAS
-================================ */
+/* LISTAS */
 .main ul {
   padding-left: 20px;
 }
@@ -204,15 +217,64 @@ figcaption {
   margin-bottom: 5px;
 }
 
+/* Container da tabela para centralizar */
+.table-container {
+  width: 100%; /* ocupa toda a largura disponível */
+  overflow-x: auto; /* rolagem horizontal se a tela for pequena */
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Estilo da tabela */
+.atores-saw {
+  width: 90%; /* ocupa 90% do container, deixa margem nas laterais */
+  border-collapse: collapse; /* remove espaçamento duplo das bordas */
+  background-color: var(--bg-caixa); /* cor da tabela no tema escuro */
+  color: var(--texto-principal);
+  border: 1px solid var(--borda);
+  border-radius: var(--radius);
+  overflow: hidden; /* faz os cantos arredondados funcionarem */
+  font-size: 0.95rem;
+}
+
+/* Cabeçalho */
+.atores-saw thead {
+  background-color: var(--bg-hover);
+}
+
+.atores-saw th {
+  padding: 12px;
+  text-align: left;
+  color: var(--cor-titulo);
+}
+
+/* Corpo da tabela */
+.atores-saw td {
+  padding: 10px 12px;
+  border-top: 1px solid var(--borda);
+  color: var(--texto-secundario);
+}
+
+/* Linha alternada para melhor leitura */
+.atores-saw tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+/* Hover nas linhas */
+.atores-saw tbody tr:hover {
+  background-color: #333;
+}
+
 /* ================================
    FOOTER
 ================================ */
 footer {
   text-align: center;
-  background-color: #1a1a1a;
+  background-color: var(--bg-caixa);
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid #333;
+  border-top: 2px solid var(--borda);
 }
 
 .footer-links {
@@ -254,5 +316,15 @@ footer {
 
   .menu a {
     padding: 5px 8px;
+  }
+
+  .atores-saw {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .atores-saw th,
+  .atores-saw td {
+    padding: 8px;
   }
 }
