@@ -9,8 +9,6 @@
 
 ul {
   list-style: none; /* Remove os pontos */
-  padding: 0;       /* Remove o recuo padrão */
-  margin: 0;        /* Remove a margem padrão, se quiser */
 }
 
 
